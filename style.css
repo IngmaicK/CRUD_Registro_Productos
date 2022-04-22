@@ -7,13 +7,25 @@ body {
 
 .navClass {
     width: 50%;
-    margin: 80px auto;
+    margin: 30px auto;
     background: rgb(156, 118, 118);
     text-align: center;
     border: 1px solid rgb(102, 27, 27);
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
+p {
+    color: rgb(95, 38, 12);
+    font-size: x-large;
+}
+
+th {
+    color: rgb(66, 18, 18);
+}
+
+tr {
+    color: rgb(245, 239, 239);
+}
 
 table {
     width: 80%;
