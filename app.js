@@ -1,7 +1,7 @@
-var selectedRow = null;
+let selectedRow = null;
 function onFormSubmit(e) {
     event.preventDefault(); //para evitar que el formulario se envie por default al entrar
-    var formData = readFormData();
+    let formData = readFormData();
     if(selectedRow === null) {
         insertNewRecord(formData);
     }
@@ -13,7 +13,7 @@ function onFormSubmit(e) {
 
 //Retrieve the data
 function readFormData() {
-    var formData = {};
+    let formData = {};
     formData["pCode"] = document.getElementById("pCode").value;
     formData["product"] = document.getElementById("product").value;
     formData["qty"] = document.getElementById("qty").value;
@@ -24,17 +24,17 @@ function readFormData() {
 
 //Insert the data de cada elemento con su respectivo boton de borrar y editar
 function insertNewRecord(data) {
-    var table = document.getElementById("storeList").getElementsByTagName('tbody')[0]; //to call new data
-    var newRow = table.insertRow(table.length); //to insert new rows
-    var cell1 = newRow.insertCell(0);
+    let table = document.getElementById("storeList").getElementsByTagName('tbody')[0]; //to call new data
+    let newRow = table.insertRow(table.length); //to insert new rows
+    let cell1 = newRow.insertCell(0);
         cell1.innerHTML = data.pCode;
-    var cell2 = newRow.insertCell(1);
+    let cell2 = newRow.insertCell(1);
         cell2.innerHTML = data.product;
-    var cell3 = newRow.insertCell(2);
+    let cell3 = newRow.insertCell(2);
         cell3.innerHTML = data.qty;
-    var cell4 = newRow.insertCell(3);
+    let cell4 = newRow.insertCell(3);
         cell4.innerHTML = data.price;
-    var cell5 = newRow.insertCell(4);
+    let cell5 = newRow.insertCell(4);
         cell5.innerHTML = `<button onClick='onEdit(this)'>Edit</button> <button onClick='onDelete(this)'>Delete</button>`
 }
 

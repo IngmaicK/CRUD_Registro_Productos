@@ -2,7 +2,7 @@ body {
     background: rgb(72, 255, 0);
     background: #BA8B02;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f38585, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #bd5959, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #bd5959, #BA8B02); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
 }
 
 .navClass {
@@ -97,7 +97,7 @@ button:hover {
 }
 
 /* Responsive */
-@media screen and (max-width:730px) {
+@media screen and (max-width:555px) {
     form {
         width: 100%;
     }
@@ -105,6 +105,16 @@ button:hover {
 }
 
 /*Footer*/
+#nota {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* .contacto {
+    text-align: left;
+    display: flexbox;
+} */
+
 .footer {
     background-color: #f1f1f1;
     padding: 1em 0;
@@ -112,7 +122,8 @@ button:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-} */
+    display: inline-block;
+} 
 
 /*Botones redes sociales Footer*/
 button {
