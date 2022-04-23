@@ -28,7 +28,7 @@ tr {
 }
 
 table {
-    width: 80%;
+    width: 60%;
     margin: 40px auto;
     background: rgb(red, green, blue);
 }
@@ -97,12 +97,11 @@ button:hover {
 }
 
 /* Responsive */
-@media screen and (max-width:555px) {
-    form {
-        width: 100%;
+@media screen and (min-width: 700px) {
+    .container {
+      margin: 1em 2em;
     }
-    
-}
+  }
 
 /*Footer*/
 #nota {
