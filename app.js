@@ -1,4 +1,5 @@
 let selectedRow = null;
+let formData = {};
 function onFormSubmit(e) {
     event.preventDefault(); //para evitar que el formulario se envie por default al entrar
     let formData = readFormData();
@@ -13,7 +14,6 @@ function onFormSubmit(e) {
 
 //Retrieve the data
 function readFormData() {
-    let formData = {};
     formData["pCode"] = document.getElementById("pCode").value;
     formData["product"] = document.getElementById("product").value;
     formData["qty"] = document.getElementById("qty").value;
@@ -70,3 +70,14 @@ function resetForm() {
     document.getElementById('qty').value = '';
     document.getElementById('price').value = '';
 }
+
+// // Local Storage
+// // event listener
+// formData.addEventListener('submit', (e) => {
+//     let saveListener = document.querySelector('#saving').value;
+//     saveStorage();
+// })
+
+// const saveStorage = () => {
+//     localStorage.setItem('datos', JSON.stringify(formData));
+// }
